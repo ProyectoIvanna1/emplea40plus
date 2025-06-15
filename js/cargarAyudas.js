@@ -1,10 +1,10 @@
 // Detecta si estamos en una ruta que contiene "session"
     let basePath;
     if (window.location.pathname.includes("session")) {
-        // Si estamos en algo como session/indexLog.php
+        // Si estamos en session
         basePath = "../cargarAyudas.php";
     }else{
-        // Si estamos en una ruta directa como cursosLog.html
+        // Si estamos en una ruta normal
         basePath = "php/cargarAyudas.php";
     }
 
