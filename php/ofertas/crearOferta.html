@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Oferta</title>
+    <link rel="stylesheet" href="../../css/estiloGeneral.css"> <!-- Ruta al archivo CSS -->
+    <link rel="stylesheet" href="../../css/estilosCrearOferta.css"> <!-- Ruta al archivo CSS -->
+    <script type="text/javascript" src="../../js/crearOferta.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../session/indexLog.php"><img src="../../img/logoEmplea40plus.png" alt="Logo de Emplea40+" id="logo"></a>
+            <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('active');document.getElementById('esquina').classList.toggle('active');">☰</button>
+            <ul id="menu">
+                <li><a href="../session/indexLog.php">Inicio</a></li>
+                <li><a href="../session/cursosLog.php">Ayudas y cursos</a></li>
+                <li><a href="../session/perfilesEmpresa.php">Perfiles y empresas</a></li>
+            </ul>
+            <ul id="esquina">
+                <li><a href="crearOferta.html">Crear Oferta</a></li>
+                <li><a href="misofertas.php">Mis Ofertas</a></li>
+                <li><a href="../session/perfil.php">Perfil</a></li>
+                <li><a href="../session/logout.php">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Crear Nueva Oferta</h1>
+        <form action="procesarOferta.php" method="POST">
+            <label for="titulo">Título de la oferta:</label>
+            <input type="text" id="titulo" name="titulo" required><br>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea><br>
+
+            <label for="requisitos">Requisitos:</label>
+            <textarea id="requisitos" name="requisitos" required></textarea><br>
+
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required><br>
+
+            <label for="salario">Salario:</label>
+            <input type="number" id="salario" name="salario" step="0.01" required><br>
+
+            <label for="tipo_horario">Tipo de horario:</label>
+            <select id="tipo_horario" name="tipo_horario" required>
+                <option value="tiempo completo">Tiempo completo</option>
+                <option value="tiempo parcial">Tiempo parcial</option>
+                <option value="freelance">Freelance</option>
+            </select><br>
+
+            <button type="submit">Crear Oferta</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Emplea40+. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
