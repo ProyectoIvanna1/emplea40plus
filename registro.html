@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Emplea40+</title>
+    <link rel="stylesheet" href="css/estiloGeneral.css">
+    <link rel="stylesheet" href="css/estilosCrearCuenta.css">
+    <script type="text/javascript" src="js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="js/clean.js"></script>
+    <script type="text/javascript" src="js/registrarUser.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logoEmplea40plus.png" alt="Logo de Emplea40+" id="logo"></a>
+            <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('active');document.getElementById('esquina').classList.toggle('active');">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Ayudas y cursos</a></li>
+                <li><a href="perfilesEmpresas.html">Perfiles y empresas</a></li>
+            </ul>
+            <ul id="esquina">
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="titulo">
+        <h2>¿Aún no tienes cuenta? ¡Registrate con nosotros!</h2>
+    </div>
+
+    <section id="register-section">
+        <h1>Crear Cuenta</h1>
+        <form action="php/RegUser.php" method="POST">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="id_usuario" name="usuario" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="id_correo" name="correo" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="id_password" name="password" required>
+
+            <label for="tipo_usuario">Tipo de Cuenta:</label>
+            <select id="id_tipo_usuario" name="tipo_usuario">
+                <option value="trabajador">Empleado</option>
+                <option value="empresa">Empresa</option>
+            </select>
+
+            <button type="button" id="id_registro_btn">Registrarse</button>
+        </form>
+    </section>
+    <div>
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Emplea40+. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplea40+ - Encuentra Trabajo a los 40 y Más</title>
+    <link rel="stylesheet" href="css/estiloGeneral.css">
+    <script type="text/javascript" src="js/cargarUsuarios.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="js/clean.js"></script>
+    <script type="text/javascript" src="js/ofertas.js"></script>
+    <script type="text/javascript" src="js/buscador.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logoEmplea40plus.png" alt="Logo de Emplea40+" id="logo"></a>
+            <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('active');document.getElementById('esquina').classList.toggle('active');">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Ayudas y cursos</a></li>
+                <li><a href="perfilesEmpresas.html">Perfiles y empresas</a></li>
+            </ul>
+            <ul id="esquina">
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Bienvenido a Emplea40+</h1>
+        <p>Encuentra empleo adaptado a tus habilidades, experiencia y capacidades. ¡La oportunidad está aquí!</p>
+        <a href="registro.html" class="cta-button">Regístrate ahora</a>
+    </section>
+
+    <div id="mensaje-no-encontrado" style="display: none; text-align: center; color: rgb(221, 221, 221); margin-top: 10px; background-color: rgb(55, 56, 56); font-size:larger;">
+        No se ha encontrado ninguna oferta con esos filtros.
+    </div>
+
+    <section id="recent-jobs">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar ofertas...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <h2>Ofertas de empleo más recientes</h2>
+        
+        <div class="job-listings" id="id_ofertas">
+            
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Emplea40+. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
