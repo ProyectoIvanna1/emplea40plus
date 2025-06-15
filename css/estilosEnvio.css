@@ -1,0 +1,38 @@
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+main h1 {
+    color: #0d3861;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(7, 76, 156, 0.53);
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #0d3861;
+}
+
+main a.cta-button {
+    background-color: #545658;
+    color: rgb(207, 204, 204);
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+main a.cta-button:hover {
+    background-color: #c6c6c7;
+    color: rgb(32, 28, 28);
+}

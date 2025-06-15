@@ -1,0 +1,97 @@
+/* estilosAdministracion.css */
+
+main {
+    max-width: 900px;
+    margin: 40px auto 60px auto; /* Separación superior e inferior */
+    background-color: #ffffffcc; /* Blanco semitransparente para contraste */
+    padding: 40px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.15rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admin-options ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-options ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: #0d161d;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.admin-options ul li a:hover,
+.admin-options ul li a:focus {
+    background-color: #485055;
+    outline: none;
+}
+
+/* Footer minimal adjustment to keep it neat */
+footer p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    margin: 20px 10px 30px 10px;
+    padding: 20px 15px;
+    border-radius: 6px;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  main p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .admin-options ul {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .admin-options ul li a {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    margin-top: 40px;
+  }
+}

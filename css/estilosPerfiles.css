@@ -1,0 +1,274 @@
+/* Bloque principal */
+  #bloque {
+    display: flex;
+    flex: 1;
+    min-height: 70vh;
+    background: white;
+    margin: 24px auto;
+    max-width: 1100px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #img-perfil {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  border: 4px solid #000000; /* borde azul */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  object-fit: cover;
+  transition: border-color 0.3s ease;
+  margin: 5%;
+}
+
+#img-perfil:hover {
+  border-color: #000000; /* cambia el borde al pasar el mouse */
+}
+
+
+  /* Sidebar mejorado */
+  .sidebar {
+    width: 220px;
+    background: #5e6469;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    border-radius: 14px 0 0 14px;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+    user-select: none;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .sidebar li {
+    margin: 0;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 14px 28px;
+    color: #ecf0f1;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border-left: 4px solid transparent;
+    border-radius: 0 24px 24px 0;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+
+  .sidebar a:hover,
+  .sidebar a:focus {
+    background-color: #6d757e;
+    border-left-color: #c4c4c4;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .sidebar a.active {
+    background-color: #5e5c5c;
+    border-left-color: #757070;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 2px 0 10px rgba(2, 1, 1, 0.6);
+  }
+
+  /* Ajustamos las secciones para que no sean absolutas y ocupen el espacio */
+  .centro {
+    flex: 1;
+    padding: 32px;
+    background: #eee;
+    border-radius: 0 14px 14px 0;
+    overflow-y: auto;
+  }
+
+  .centro section {
+    display: none;
+    background: #fff;
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .centro section.active-section {
+    display: block;
+    color: black;
+  }
+
+  /* Responsive: Sidebar horizontal en móvil */
+  @media (max-width: 700px) {
+    #bloque {
+      flex-direction: column;
+      margin: 12px;
+      min-height: auto;
+    }
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      padding: 8px 0;
+      border-radius: 14px 14px 0 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      background: #232629;
+    }
+    .sidebar ul {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 0;
+      padding: 0 8px;
+    }
+    .sidebar a {
+      padding: 12px 8px;
+      border-left: none;
+      border-bottom: 3px solid transparent;
+      border-radius: 0;
+      font-size: 0.95rem;
+    }
+    .sidebar a.active {
+      background-color: transparent;
+      border-left: none;
+      border-bottom-color: #868585;
+      box-shadow: none;
+      font-weight: 700;
+      color: #808ba8;
+    }
+    .sidebar a:hover,
+    .sidebar a:focus {
+      background-color: transparent;
+      border-left: none;
+      border-bottom-color: #363434;
+      color: #7e7b7b;
+    }
+  }
+
+  /* Contenedor fila */
+.perfil-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+/* Label estilo */
+.perfil-label {
+  flex: 0 0 140px; /* ancho fijo */
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+  user-select: none;
+  font-size: 1rem;
+  padding-right: 12px;
+  white-space: nowrap;
+}
+
+/* Inputs, textarea y file */
+.perfil-valor {
+  flex: 1;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  color: #222;
+  outline-offset: 2px;
+  resize: vertical;
+  min-height: 38px;
+  max-width: 100%;
+  box-sizing: border-box;
+  cursor: text;
+}
+
+/* Textareas un poco más altos */
+.perfil-valor[type="textarea"],
+.perfil-valor[as="textarea"],
+textarea.perfil-valor {
+  min-height: 90px;
+}
+
+/* Input file estilos */
+.perfil-valor[type="file"] {
+  padding: 6px 10px;
+  background: transparent;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Focus */
+.perfil-valor:focus {
+  border-color: #3a3535;
+  box-shadow: 0 0 6px rgba(110, 110, 110, 0.5);
+  background: #fff;
+  outline: none;
+}
+
+/* Readonly */
+.perfil-valor[readonly] {
+  background: #eee;
+  color: #777;
+  cursor: default;
+  border-color: #bbb;
+}
+
+/* Centrar botón en su fila */
+.perfil-item[style*="justify-content:center;"] {
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .perfil-item {
+    margin-bottom: 8px; /* menos espacio entre filas */
+  }
+  
+  .perfil-valor {
+    padding: 8px 10px; /* inputs un poco más pequeños */
+    font-size: 0.95rem;
+  }
+  
+  .btn-guardar {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+}
+
+
+.btn-guardar, #btn_cambiar_foto  {
+  background-color: #817e7e; /* rojo vibrante */
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 30px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  box-shadow: 0 4px 10px rgba(77, 75, 75, 0.4);
+  user-select: none;
+  margin: 5%;
+}
+
+.btn-guardar:hover, #btn_cambiar_foto:hover{
+  background-color: #7a7a7a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(58, 56, 56, 0.6);
+}
+
+.btn-guardar:active, #btn_cambiar_foto:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 7px rgba(92, 91, 91, 0.8);
+}
+h1{
+    padding: 2%;
+}

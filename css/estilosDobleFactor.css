@@ -1,0 +1,66 @@
+/* Layout principal para que la sección esté centrada y limpia */
+#verificacion-section {
+    max-width: 400px;
+    margin: 80px auto 40px auto;
+    padding: 24px 20px;
+    background: #474a58;
+    color: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+#verificacion-section h1 {
+    color: #4da6ff;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-shadow: 1px 1px 5px #074c9c88;
+}
+
+#verificacion-section p {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    color: #b8c1ec;
+}
+
+#verificacionForm label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #b8c1ec;
+}
+
+#verificacionForm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #b8c1ec;
+    font-size: 1rem;
+    color: #232946;
+    background: #f4f4f4;
+    transition: border-color 0.2s;
+    margin-bottom: 20px;
+}
+
+#verificacionForm input[type="text"]:focus {
+    border-color: #4da6ff;
+    outline: none;
+}
+
+#verificarCodigoBtn {
+    background-color: #4da6ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#verificarCodigoBtn:hover {
+    background-color: #3584c7;
+}

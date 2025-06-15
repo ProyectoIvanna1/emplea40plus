@@ -1,0 +1,79 @@
+/* estilosUsuarios.css */
+
+main {
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #2b323a;
+}
+
+th {
+    background-color: #4d4f50;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f0f8ff;
+    cursor: default;
+}
+
+td {
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px 15px;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    th {
+        display: none;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        border-bottom: 1px solid #ccc;
+    }
+    td::before {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: 600;
+        text-align: left;
+        content: attr(data-label);
+        color: #5e6163;
+    }
+}

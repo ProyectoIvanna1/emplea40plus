@@ -1,0 +1,96 @@
+
+/* Contenedor principal del formulario */
+#registro {
+    max-width: 400px;
+    margin: 40px auto 20px auto;
+    background: #474a58;
+    color: #e0e0e0;
+    padding: 32px 24px;
+    border-radius: 12px;
+}
+
+/* Título general */
+#titulo, #registro h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#titulo {
+    color: #0d3861;
+    margin-top: 24px;
+    text-shadow: 2px 2px 8px #074c9c, 0 2px 4px #23294633;
+}
+
+#registro h1 {
+    color: #4da6ff;
+}
+
+/* Formulario */
+#registro form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Etiquetas */
+#registro label {
+    font-weight: bold;
+    color: #b8c1ec;
+}
+
+/* Inputs de texto y contraseña */
+#registro input[type="text"],
+#registro input[type="password"] {
+    padding: 10px;
+    border: 1px solid #b8c1ec;
+    border-radius: 6px;
+    background: #f4f4f4;
+    color: #232946;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+#registro input[type="text"]:focus,
+#registro input[type="password"]:focus {
+    border: 1.5px solid #4da6ff;
+    outline: none;
+}
+
+/* Botón de envío */
+#registro input[type="button"] {
+    background: #4da6ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+#registro input[type="button"]:hover {
+    background: #3584c7;
+}
+
+/* Mensaje inferior */
+body > div:last-of-type {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #232946;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    #registro {
+        padding: 18px 8px;
+        max-width: 98vw;
+    }
+
+    #registro h1 {
+        font-size: 1.3rem;
+    }
+}

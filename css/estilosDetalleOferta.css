@@ -1,0 +1,92 @@
+/* Estilos para el contenedor general */
+div {
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #365e86;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 1.6rem;
+    color: #181515;
+    margin-bottom: 15px;
+}
+
+/* Texto descriptivo */
+p {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Etiquetas importantes */
+p strong {
+    color: #a4c8f0;
+}
+
+/* Sección del formulario */
+form {
+    background-color: #474a58;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #e0e0e0;
+}
+
+/* Etiquetas del formulario */
+form label {
+    font-weight: bold;
+    color: #b8c1ec;
+}
+
+/* Input de archivo */
+input[type="file"] {
+    background-color: #f4f4f4;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #b8c1ec;
+    font-size: 1rem;
+}
+
+/* Botón de envío */
+form button {
+    background-color: #4da6ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3584c7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        margin: 20px;
+        padding: 16px;
+    }
+
+    h1, h2 {
+        font-size: 1.4rem;
+    }
+}

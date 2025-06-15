@@ -1,0 +1,65 @@
+/* estilosAyudas.css */
+
+/* Estilos comunes para los bloques de cursos y ayudas */
+.curso, .ayuda {
+    background-color: #3a3a3a; /* Gris intermedio */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.curso:hover, .ayuda:hover {
+    transform: translateY(-5px);
+}
+
+/* Encabezados */
+.curso h2, .ayuda h2 {
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+/* Imagen del recurso */
+.curso img, .ayuda img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #555;
+}
+
+/* Texto descriptivo */
+.curso p, .ayuda p {
+    color: #c0c0c0;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Enlace tipo botón */
+.curso .cta-button, .ayuda .cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #1f4a5c; /* Azul oscuro para destacar */
+    color: #ffffff;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.curso .cta-button:hover, .ayuda .cta-button:hover {
+    background-color: #256d8f;
+}
+
+.curso img, .ayuda img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* Recorta la imagen para que rellene sin distorsionar */
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #555;
+}
+

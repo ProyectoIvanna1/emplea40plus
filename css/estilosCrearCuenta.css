@@ -1,0 +1,107 @@
+
+
+/* Contenedor del formulario */
+#register-section {
+    max-width: 450px;
+    margin: 40px auto;
+    background: #3e4252;
+    color: #e0e0e0;
+    padding: 32px 26px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Título de la sección */
+#register-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4da6ff;
+    font-size: 2rem;
+}
+
+/* Título general */
+#titulo {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0d3861;
+    margin-top: 24px;
+    text-shadow: 2px 2px 8px #074c9c, 0 2px 4px #23294633;
+}
+
+/* Estilos generales del formulario */
+#register-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#register-section label {
+    font-weight: bold;
+    color: #b8c1ec;
+}
+
+/* Campos de entrada */
+#register-section input[type="text"],
+#register-section input[type="password"],
+#register-section input[type="email"],
+#register-section select {
+    padding: 10px;
+    border: 1px solid #b8c1ec;
+    border-radius: 6px;
+    background: #f4f4f4;
+    color: #232946;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+#register-section input[type="text"]:focus,
+#register-section input[type="password"]:focus,
+#register-section input[type="email"]:focus,
+#register-section select:focus {
+    border: 1.5px solid #4da6ff;
+    outline: none;
+}
+
+/* Botón de registro */
+#id_registro_btn {
+    background: #4da6ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#id_registro_btn:hover {
+    background: #3584c7;
+}
+
+/* Mensaje de validación */
+#mensaje-validacion {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #ff4d4d;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 500px) {
+    #register-section {
+        padding: 18px 8px;
+        max-width: 95vw;
+    }
+    #register-section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+body > div:last-of-type {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #232946;
+}

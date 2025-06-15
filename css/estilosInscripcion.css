@@ -1,0 +1,65 @@
+/* Contenedor del formulario */
+#cursos {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #474a58; /* fondo gris oscuro */
+    color: #e0e0e0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Título principal */
+#cursos h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    color: #4da6ff; /* azul utilizado en botones */
+}
+
+/* Estilo del formulario */
+#form-inscripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Etiquetas */
+#form-inscripcion label {
+    font-weight: bold;
+    color: #b8c1ec; /* tono claro acorde con la paleta */
+}
+
+/* Inputs y textarea */
+#form-inscripcion input[type="text"],
+#form-inscripcion input[type="email"],
+#form-inscripcion input[type="tel"],
+#form-inscripcion textarea {
+    padding: 10px;
+    border: 1px solid #b8c1ec;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    color: #232946;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+#form-inscripcion input:focus,
+#form-inscripcion textarea:focus {
+    border: 1.5px solid #4da6ff;
+    outline: none;
+}
+
+/* El botón reutiliza la clase .cta-button ya definida en estiloGeneral.css */
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    #cursos {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #cursos h1 {
+        font-size: 1.5rem;
+    }
+}
