@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplea40+ - Encuentra Trabajo a los 40 y Más</title>
+    <link rel="stylesheet" href="../../css/estiloGeneral.css">
+    <link rel="stylesheet" href="../../css/estilosMisOfertas.css">
+    <script type="text/javascript" src="../../js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="../../js/clean.js"></script>
+    <script type="text/javascript" src="../../js/misOfertas.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../session/indexLog.php"><img src="../../img/logoEmplea40plus.png" alt="Logo de Emplea40+" id="logo"></a>
+            <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('active');document.getElementById('esquina').classList.toggle('active');">☰</button>
+            <ul id="menu">
+                <li><a href="../session/indexLog.php">Inicio</a></li>
+                <li><a href="../session/cursosLog.php">Ayudas y cursos</a></li>
+                <li><a href="../session/perfilesEmpresa.php">Perfiles y empresas</a></li>
+            </ul>
+            <ul id="esquina">
+                <!-- Botones dinámicos según el estado de sesión -->
+                {{botones}}
+            </ul>
+        </nav>
+    </header>
+
+    <section id="id_ofertas">
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Emplea40+. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

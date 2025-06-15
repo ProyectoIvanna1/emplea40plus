@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplea40+ - Encuentra Trabajo a los 40 y Más</title>
+    <link rel="stylesheet" href="../../css/estiloGeneral.css">
+    <link rel="stylesheet" href="../../css/estilosPerfiles.css">
+    <script type="text/javascript" src="../../js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="../../js/clean.js"></script>
+    <script type="text/javascript" src="../../js/perfiles.js"></script>
+
+    <script type="text/javascript" src="../../js/ofertas.js"></script>
+    <script type="text/javascript" src="../../js/cambiarFoto.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="indexLog.php"><img src="../../img/logoEmplea40plus.png" alt="Logo de Emplea40+" id="logo"></a>
+            <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('active');document.getElementById('esquina').classList.toggle('active');">☰</button>
+            <ul id="menu">
+                <li><a href="indexLog.php">Inicio</a></li>
+                <li><a href="cursosLog.php">Ayudas y cursos</a></li>
+                <li><a href="perfilesEmpresa.php">Perfiles y empresas</a></li>
+            </ul>
+            <ul id="esquina">
+                <!-- Botones dinámicos según el estado de sesión -->
+                {{botones}}
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bloque">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#id_perfil" class="active">Perfil</a></li>
+                <li><a href="#id_datos_Personales">Datos personales</a></li>
+                <li><a href="#id_ajustes">Ajustes</a></li>
+                <li><a href="#id_testimonios">Testimonios</a></li>
+            </ul>
+    
+        </div>
+
+        <div class="centro">
+            <section id="id_perfil">
+                <h1>Perfil</h1>
+                {{perfil_section}}
+            </section>
+
+            <section id="id_datos_Personales">
+                <h1>Datos visibles del perfil</h1>
+                {{datos_personales_section}}
+            </section>
+
+            <section id="id_testimonios">
+                <h1>Testimonios de otros usuarios</h1>
+                {{testimonios_section}}
+            </section>
+
+            <section id="id_ajustes">
+                <h1>Ajustes de usuario</h1>
+                {{ajustes_section}}
+            </section>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Emplea40+. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

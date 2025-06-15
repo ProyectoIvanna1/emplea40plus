@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Emplea40+</title>
+    <link rel="stylesheet" href="../../css/estiloGeneral.css"> 
+    <link rel="stylesheet" href="../../css/estilosAyudas.css">
+    <script type="text/javascript" src="../../js/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="../../js/clean.js"></script>
+    <script type="text/javascript" src="../../js/cargarCurso.js"></script>
+    <script type="text/javascript" src="../../js/cargarAyudas.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <nav>
+            <a href="indexLog.php"><img src="../../img/logoEmplea40plus.png" alt="Logo de Emplea40+" id="logo"></a>
+            <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('active');document.getElementById('esquina').classList.toggle('active');">☰</button>
+            <ul id="menu">
+                <li><a href="indexLog.php">Inicio</a></li>
+                <li><a href="cursosLog.php">Ayudas y cursos</a></li>
+                <li><a href="perfilesEmpresa.php">Perfiles y empresas</a></li>
+            </ul>
+            <ul id="esquina">
+                <!-- Botones dinámicos según el estado de sesión -->
+                {{botones}}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="id_lista_cursos">
+            <h1>Cursos Disponibles</h1>
+        
+        </section>
+
+        <section id="id_lista_ayudas">
+            <h1>Ayudas Disponibles</h1>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Emplea40+. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
